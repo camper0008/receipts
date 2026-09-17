@@ -1,0 +1,37 @@
+[
+    {
+        "items": [],
+        "title": "Bills",
+        "color": "#77567A"
+    },
+    {
+        "items": [],
+        "title": "Food",
+        "color": "#CF5C36"
+    },
+    {
+        "items": [],
+        "title": "Fuel",
+        "color": "#75485E"
+    },
+    {
+        "items": [],
+        "title": "Alcohol",
+        "color": "#499167"
+    },
+    {
+        "items": [],
+        "title": "Sugar",
+        "color": "#C1666B"
+    },
+    {
+        "items": [],
+        "title": "Projects",
+        "color": "#7B4B94"
+    },
+    {
+        "items": [],
+        "title": "Misc",
+        "color": "#CB904D"
+    }
+]

@@ -1,0 +1,109 @@
+:root {
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-family: system-ui;
+}
+
+usage-chart {
+    font-size: 1.25rem;
+    padding: 1rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+usage-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+        outline: 1px solid white;
+        cursor: pointer;
+    }
+}
+
+category-bar {
+    flex: 1;
+    width: 3rem;
+    max-height: 30rem;
+    animation: bar-entry 1s;
+    transform-origin: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    category-bar-percentage {
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+}
+
+category-amount {
+    font-size: 1.33em;
+    margin-top: 1.125rem;
+    b {
+        font-weight: 900;
+    }
+}
+
+category-title {
+    margin-block: 0.75rem;
+    font-weight: 500;
+}
+
+@keyframes bar-entry {
+    from {
+        transform: scaleY(0%);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+dialog {
+    border-radius: 0.5rem;
+
+    &::backdrop {
+        backdrop-filter: blur(8px);
+    }
+}
+
+category-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    label {
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    label:has(input:checked) {
+        border: 2px solid white;
+    }
+
+    input {
+        appearance: none;
+        position: absolute;
+    }
+}

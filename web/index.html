@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta name="color-scheme" content="dark">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <usage-chart id="usage-chart"></usage-chart>
+        <dialog id="log-item-dialog" closedby="any">
+            <button
+                onclick="document.querySelector('#log-item-dialog').close()">X</button>
+
+            <form id="log-item-form">
+                <p>
+                    <label for="name">Name</label>
+
+                    <input id="name" name="name" type="text" autofocus>
+                </p>
+                <p>
+                    <label for="price">Price</label>
+                    <input id="price" name="price" type="number" step="0.01">
+                </p>
+                <hr>
+                <category-radio-group></category-radio-group>
+                <hr>
+                <input type="submit" value="Submit">
+            </form>
+        </dialog>
+    </body>
+</html>
