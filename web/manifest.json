@@ -1,0 +1,14 @@
+{
+    "name": "receipts",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#1c1b22",
+    "background_color": "#1c1b22",
+    "icons": [
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
