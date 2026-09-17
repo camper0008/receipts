@@ -59,6 +59,7 @@ async function listen({ port, hostname }: Config) {
         console.log(ctx.request.url.pathname);
         await send(ctx, ctx.request.url.pathname || "", {
             root: `${Deno.cwd()}/web`,
+            index: "index.html",
         });
     });
 
