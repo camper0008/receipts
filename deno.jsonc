@@ -5,6 +5,9 @@
     "fmt": {
         "indentWidth": 4
     },
+    "tasks": {
+        "service": "deno run -A main.ts"
+    },
     "imports": {
         "@oak/oak": "jsr:@oak/oak@^17.2.0"
     }
