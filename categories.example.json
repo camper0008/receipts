@@ -1,11 +1,6 @@
 [
     {
         "items": [],
-        "title": "Bills",
-        "color": "#77567A"
-    },
-    {
-        "items": [],
         "title": "Food",
         "color": "#CF5C36"
     },
@@ -26,7 +21,7 @@
     },
     {
         "items": [],
-        "title": "Projects",
+        "title": "Projects & Tools",
         "color": "#7B4B94"
     },
     {
