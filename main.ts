@@ -55,18 +55,17 @@ async function listen({ port, hostname }: Config) {
         ctx.response.body = { ok: true };
     });
 
-    routes.get("/:path+", async (ctx) => {
-        console.log(ctx.request.url.pathname);
-        await send(ctx, ctx.request.url.pathname || "", {
-            root: `${Deno.cwd()}/web`,
-            index: "index.html",
-        });
-    });
-
     const app = new Application();
     app.use(oakCors());
     app.use(routes.routes());
     app.use(routes.allowedMethods());
+
+    app.use(async (ctx) => {
+        await ctx.send({
+            root: `${Deno.cwd()}/web`,
+            index: "index.html",
+        });
+    });
 
     app.addEventListener("listen", ({ port, hostname }) => {
         console.log(`listening on ${hostname},`, port);
