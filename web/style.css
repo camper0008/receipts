@@ -22,8 +22,9 @@ usage-chart {
     padding: 1rem;
     gap: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: stretch;
+    overflow-x: auto;
 }
 
 usage-category {
